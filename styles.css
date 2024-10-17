@@ -20,9 +20,10 @@ nav a {
 }
 nav a:hover {
     text-decoration: underline;
+    color:indianred;
 }
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     padding: 20px;
     background: #fff;
@@ -43,4 +44,18 @@ footer {
 }
 .selected-tab{
     font-weight: bold;
+}
+#material{
+    background-color: #c3c3c3;
+    color: black;
+    max-width:400px;
+    padding:20px;
+    margin:1vh 5vw 10vh 1vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display:inline-block;
+    border: dashed white 5px;
+}
+#material:hover{
+    text-decoration: underline;
+    border: dashed indianred 5px;
 }
