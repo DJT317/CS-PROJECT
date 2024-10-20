@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Acetate Sheets Shopping</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #ffffff;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .product-info {
+            flex-grow: 1;
+        }
+        button {
+            background: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #4cae4c;
+        }
+    </style>
 </head>
 <body>
-    <p> Acetate sheets</p>
+    <header>
+        <h1>Acetate Sheets Shopping</h1>
+    </header>
+    <div class="container">
+        <h2>Available Products</h2>
+
+        <div class="product">
+            <img src="pictures/ace clear.png" alt="Clear Acetate Sheet">
+            <div class="product-info">
+                <h3>Clear Acetate Sheet</h3>
+                <p>Size: A4 (210 x 297 mm)</p>
+                
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="pictures/frosted ace.png" alt="Frosted Acetate Sheet">
+            <div class="product-info">
+                <h3>Frosted Acetate Sheet</h3>
+                <p>Size: A3 (297 x 420 mm)</p>
+                
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="pictures/colored ace.png" alt="Colored Acetate Sheet">
+            <div class="product-info">
+                <h3>Colored Acetate Sheet</h3>
+                <p>Size: 12 x 12 inch</p>
+            
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="pictures/text ace.png" alt="Textured Acetate Sheet">
+            <div class="product-info">
+                <h3>Textured Acetate Sheet</h3>
+                <p>Size: A5 (148 x 210 mm)</p>
+                
+            </div>
+            <button>Add to Cart</button>
+        </div>
+    </div>
 </body>
 </html>
