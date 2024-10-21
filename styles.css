@@ -5,10 +5,13 @@ body {
     background-color: #f4f4f4;
 }
 header {
-    background: #333;
+    background: #648d84;
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    border-radius: 0px 0px 50px 50px;
+    position:sticky;
+    top:0px;
 }
 nav {
     margin: 10px 0;
@@ -62,6 +65,7 @@ footer {
     display: inline-block;
     border: solid #c3c3c3 5px;
     margin:auto;
+    border-radius: 2%;
 }
 .material:hover{
     border: dashed indianred 5px;
