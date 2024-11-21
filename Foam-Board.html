@@ -37,20 +37,50 @@
         .color-option {
             margin-top: 10px;
         }
+        header {
+            background: #648d84;
+            color: #fff;
+            padding: 10px 0;
+            margin: 10px;
+            text-align: center;
+            border-radius: 0px;
+            position: static;
+            top:0px;
+        }
+        nav{
+            margin: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color:indianred;
+        }
         button {
-            padding: 10px 15px;
-            background-color: #007bff;
+            background: #060ae4da;
             color: white;
             border: none;
-            border-radius: 5px;
+            padding: 10px 15px;
             cursor: pointer;
+            border-radius: 4px;
         }
         button:hover {
-            background-color: #0056b3;
-        }
+            background: #4c4cae;
+        } 
     </style>
 </head>
 <body>
+    <header>
+        <h1><a href="project.html" class="title">Architecture Supply</a></h1>
+        <nav>
+            <a href="project.html" class="selected-tab">Supplies</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contacts</a>
+        </nav>
+    </header>
 
 <div class="container">
     <h1>Purchase Foam Board</h1>
@@ -68,7 +98,9 @@
                 <option value="30x40">30" x 40"</option>
             </select>
         </div>
-        <button>Add to Cart</button>
+        <form action="Buy.html">
+            <button>Add to Cart</button>
+        </form>
     </div>
 
     <div class="product">
@@ -83,7 +115,9 @@
                 <option value="30x40">30" x 40"</option>
             </select>
         </div>
-        <button>Add to Cart</button>
+        <form action="Buy.html">
+            <button>Add to Cart</button>
+        </form>
     </div>
 
     <div class="product">
@@ -98,7 +132,9 @@
                 <option value="30x40">30" x 40"</option>
             </select>
         </div>
-        <button>Add to Cart</button>
+        <form action="Buy.html">
+            <button>Add to Cart</button>
+        </form>
     </div>
 
     <div class="product">
@@ -113,7 +149,9 @@
                 <option value="30x40">30" x 40"</option>
             </select>
         </div>
-        <button>Add to Cart</button>
+        <form action="Buy.html">
+            <button>Add to Cart</button>
+        </form>
     </div>
 
     <div class="product">
@@ -128,7 +166,9 @@
                 <option value="30x40">30" x 40"</option>
             </select>
         </div>
-        <button>Add to Cart</button>
+        <form action="Buy.html">
+            <button>Add to Cart</button>
+        </form>
     </div>
 
     <div class="product">
@@ -143,7 +183,9 @@
                 <option value="30x40">30" x 40"</option>
             </select>
         </div>
-        <button>Add to Cart</button>
+        <form action="Buy.html">
+            <button>Add to Cart</button>
+        </form>
     </div>
 
 </div>

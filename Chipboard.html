@@ -41,20 +41,39 @@
         .size-option {
             margin-top: 10px;
         }
-        button {
-            padding: 10px 15px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        header {
+            background: #648d84;
+            color: #fff;
+            padding: 10px 0;
+            margin: 10px;
+            text-align: center;
+            border-radius: 0px;
+            position: static;
+            top:0px;
         }
-        button:hover {
-            background-color: #0056b3;
+        nav{
+            margin: 10px 0;
         }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color:indianred;
+        } 
     </style>
 </head>
 <body>
+    <header>
+        <h1><a href="project.html" class="title">Architecture Supply</a></h1>
+        <nav>
+            <a href="project.html">Supplies</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html" class="selected-tab">Contacts</a>
+        </nav>
+    </header>
 
 <div class="container">
     <h1>Purchase Chipboard</h1>
@@ -90,7 +109,9 @@
                     <option value="1">1" (36"x72")</option>
                 </select>
             </div>
-            <button>Add to Cart</button>
+            <form action="Buy.html">
+                <button>Add to Cart</button>
+            </form>
         </div>
     </div>
 
@@ -107,4 +128,9 @@
                     <option value="3/4">3/4" (30"x60")</option>
                 </select>
             </div>
+            <form action="Buy.html">
+                <button>Add to Cart</button>
+            </form>
+        </div>
+    </div>
   

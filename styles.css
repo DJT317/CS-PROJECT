@@ -8,9 +8,10 @@ header {
     background: #648d84;
     color: #fff;
     padding: 10px 0;
+    margin: 10px;
     text-align: center;
-    border-radius: 0px 0px 50px 50px;
-    position:sticky;
+    border-radius: 0px;
+    position: static;
     top:0px;
 }
 nav {
@@ -81,3 +82,13 @@ a{
     color: black;
     text-decoration:none;
 }
+button {
+    background: #060ae4da;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+button:hover {
+    background: #4c4cae;}

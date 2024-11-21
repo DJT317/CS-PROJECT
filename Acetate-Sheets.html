@@ -45,25 +45,41 @@
         .product-info {
             flex-grow: 1;
         }
-        button {
-            background: #0008ff;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            border-radius: 4px;
+        header {
+            background: #648d84;
+            color: #fff;
+            padding: 10px 0;
+            margin: 10px;
+            text-align: center;
+            border-radius: 0px;
+            position: static;
+            top:0px;
         }
-        button:hover {
-            background: #4c4cae;
+        nav{
+            margin: 10px 0;
         }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color:indianred;
+        } 
     </style>
 </head>
 <body>
     <header>
-        <h1>Acetate Sheets Shopping</h1>
+        <h1><a href="project.html" class="title">Architecture Supply</a></h1>
+        <nav>
+            <a href="project.html" class="selected-tab">Supplies</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contacts</a>
+        </nav>
     </header>
     <div class="container">
-        <h2>Available Products</h2>
+        <h1>Acetate Sheets Shopping</h1>
 
         <div class="product">
             <img src="pictures/ace clear.png" alt="Clear Acetate Sheet">
@@ -72,7 +88,10 @@
                 <p>Size: A4 (210 x 297 mm)</p>
                 
             </div>
-            <button>Add to Cart</button>
+            <form action="Buy.html">
+                <button>Add to Cart</button>
+            </form>
+            
         </div>
 
         <div class="product">
@@ -82,7 +101,9 @@
                 <p>Size: A3 (297 x 420 mm)</p>
                 
             </div>
-            <button>Add to Cart</button>
+            <form action="Buy.html">
+                <button>Add to Cart</button>
+            </form>
         </div>
 
         <div class="product">
@@ -92,7 +113,9 @@
                 <p>Size: 12 x 12 inch</p>
             
             </div>
-            <button>Add to Cart</button>
+            <form action="Buy.html">
+                <button>Add to Cart</button>
+            </form>
         </div>
 
         <div class="product">
@@ -102,7 +125,9 @@
                 <p>Size: A5 (148 x 210 mm)</p>
                 
             </div>
-            <button>Add to Cart</button>
+            <form action="Buy.html">
+                <button>Add to Cart</button>
+            </form>
         </div>
     </div>
 </body>
