@@ -63,6 +63,17 @@
             text-decoration: underline;
             color:indianred;
         } 
+        button {
+            background: #060ae4da;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #4c4cae;
+        } 
     </style>
 </head>
 <body>
@@ -92,7 +103,17 @@
                     <option value="3/4">3/4" (24"x48")</option>
                 </select>
             </div>
-            <button>Add to Cart</button>
+            <div class="number-options">
+                <label for="number1">Number of boards:</label>
+                <select id="number1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <button id="cart1" onclick="cart1DataSave('Standard Chipboards', document.getElementById('number1').value, document.getElementById('size1').value)">Add to Cart</button>
         </div>
     </div>
 
@@ -109,9 +130,17 @@
                     <option value="1">1" (36"x72")</option>
                 </select>
             </div>
-            <form action="Buy.html">
-                <button>Add to Cart</button>
-            </form>
+            <div class="number-options">
+                <label for="number2">Number of boards:</label>
+                <select id="number2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <button id="cart2" onclick="cart2DataSave('Heavy-Duty Chipboards', document.getElementById('number2').value, document.getElementById('size2').value)">Add to Cart</button>
         </div>
     </div>
 
@@ -128,9 +157,21 @@
                     <option value="3/4">3/4" (30"x60")</option>
                 </select>
             </div>
-            <form action="Buy.html">
-                <button>Add to Cart</button>
-            </form>
+            <div class="number-options">
+                <label for="number3">Number of boards:</label>
+                <select id="number3">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <button id="cart3" onclick="cart3DataSave('Eco-Friendly Chipboards', document.getElementById('number3').value, document.getElementById('size3').value)">Add to Cart</button>
         </div>
     </div>
+</div>
+<script src="Project.js"></script>
+</body>
+</html>
   

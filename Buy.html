@@ -10,16 +10,29 @@
     <div class="container-top">
         <section>
             <h2>Confirm your purchase</h2>
-            <form action="Project.html">
+            <p>Submit your information below to confirm your order of</p>
+            <p id="order">sample text</p>
+            <form id="myForm" action="Project.html">
                 <label for="fname">Full name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="snumber">Studio section number:</label><br>
-                <input type="text" id="snumber" name="snumber"> <br><br><br>
-                <button>Submit</button><br><br>
-              </form>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="snumber">School email address:</label><br>
+                <input type="text" id="snumber" name="snumber" required> <br><br><br>
+                <button type="submit" id="submit">Submit</button><br><br><br>
+            </form>
+            <p>After submitting, you will receive an email when your order is ready. You must show email proof to pick up the order. If any of the information below is invalid, your order will be automatically thrown out.</p>
             <form action="Project.html">
                 <button>Cancel</button>
             </form>
         </section>
+        <script src="Project.js"></script>
+        <script>
+            let productName = localStorage.getItem('saveProductName');
+            let productNumber = localStorage.getItem('saveProductNumber');
+            let productSize = localStorage.getItem('saveProductSize');
+            if(productNumber == 1){
+                productName = productName.slice(0, -1);
+            }
+            document.getElementById('order').innerText = productNumber + ' ' + productSize + ' ' + productName;
+        </script>
 </body>
 </html>
